@@ -948,7 +948,7 @@ img {
   font-family: var(--font-display);
   font-size: clamp(4rem, 9vw, 9rem);
   line-height: .82;
-  letter-spacing: -.08em;
+  letter-spacing: -.04em;
 }
 
 .newsletter h2 span {
