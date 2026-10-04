@@ -1038,26 +1038,169 @@ img {
    RESPONSIVE
 ========================================================= */
 
+
+/* =========================================================
+   TABLET
+   bis 900px
+========================================================= */
+
 @media (max-width: 900px) {
 
-  .product-grid {
-    grid-template-columns: 1fr 1fr;
+  /* ---------- HEADER ---------- */
+
+  .site-header {
+    top: 18px;
+    padding: 20px 30px;
   }
 
-  .product-card:last-child {
-    display: none;
+  .header-actions {
+    gap: 18px;
   }
+
+
+  /* ---------- MENU ---------- */
+
+  .menu-overlay {
+    padding: 32px 30px;
+  }
+
+  .menu-nav a {
+    font-size: clamp(3.5rem, 10vw, 6rem);
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero-content {
+    padding: 0 30px 110px;
+  }
+
+  .hero h1 {
+    font-size: clamp(4rem, 11vw, 7rem);
+  }
+
+  .hero-copy {
+    max-width: 360px;
+  }
+
+  .hero-bottom {
+    right: 30px;
+  }
+
+
+  /* ---------- PRODUCTS ---------- */
+
+  .products-section {
+    padding: 90px 30px 110px;
+  }
+
+  .product-grid {
+    --products-visible: 2;
+  }
+
+  .section-heading {
+    margin-bottom: 45px;
+  }
+
+
+  /* ---------- PLAYBOOK ---------- */
+
+  .playbook {
+    padding: 0 30px 100px;
+  }
+
+  .playbook-field {
+    min-height: 560px;
+  }
+
+  .playbook-copy {
+    padding: 0 30px;
+  }
+
+  .playbook-copy h2 {
+    font-size: clamp(3.5rem, 9vw, 6rem);
+  }
+
+  .field-number {
+    font-size: 16vw;
+  }
+
+
+  /* ---------- CATEGORIES ---------- */
+
+  .categories {
+    padding: 20px 30px 110px;
+  }
+
+  .category-row {
+    min-height: 120px;
+  }
+
+  .category-row h3 {
+    font-size: clamp(3rem, 7vw, 5rem);
+  }
+
+
+  /* ---------- STORY ---------- */
 
   .story {
     grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   .story-image {
     min-height: 600px;
   }
 
+  .story-content {
+    padding: 100px 50px;
+  }
+
+  .story-content h2 {
+    font-size: clamp(4rem, 10vw, 7rem);
+  }
+
+
+  /* ---------- STATEMENT ---------- */
+
+  .statement {
+    padding: 110px 30px;
+  }
+
+
+  /* ---------- VALUES ---------- */
+
   .values {
     grid-template-columns: 1fr 1fr;
+    padding: 0 30px;
+  }
+
+  .values article {
+    min-height: 280px;
+  }
+
+  .values article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .values article:nth-child(3),
+  .values article:nth-child(4) {
+    border-top: 1px solid var(--line);
+  }
+
+
+  /* ---------- NEWSLETTER ---------- */
+
+  .newsletter {
+    padding: 100px 30px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .footer-grid {
@@ -1067,91 +1210,442 @@ img {
 }
 
 
+
+/* =========================================================
+   MOBILE
+   bis 600px
+========================================================= */
+
 @media (max-width: 600px) {
 
+  /* ---------- GLOBAL ---------- */
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .section-index {
+    font-size: 9px;
+    letter-spacing: .13em;
+  }
+
+
+  /* =======================================================
+     HEADER
+  ======================================================= */
+
   .site-header {
-    padding: 20px;
+    top: 0;
+
+    padding:
+      max(20px, env(safe-area-inset-top))
+      20px
+      20px;
+
+    grid-template-columns: 42px 1fr auto;
+  }
+
+  .logo {
+    justify-self: center;
+
+    font-size: 1.25rem;
+
+    white-space: nowrap;
+  }
+
+  .menu-button {
+    width: 34px;
+  }
+
+  .menu-button span {
+    width: 27px;
+  }
+
+  .header-actions {
+    gap: 0;
   }
 
   .header-actions > a {
     display: none;
   }
 
+  .cart-button {
+    white-space: nowrap;
+  }
+
+
+  /* =======================================================
+     MOBILE MENU
+  ======================================================= */
+
+  .menu-overlay {
+    padding:
+      max(25px, env(safe-area-inset-top))
+      20px
+      max(25px, env(safe-area-inset-bottom));
+  }
+
+  .menu-nav {
+    width: 100%;
+  }
+
+  .menu-nav a {
+    padding: 14px 0;
+
+    font-size: clamp(2.8rem, 14vw, 4.5rem);
+    line-height: .95;
+  }
+
+  .menu-nav a:hover {
+    padding-left: 0;
+  }
+
+  .menu-bottom {
+    gap: 20px;
+
+    font-size: 8px;
+  }
+
+
+  /* =======================================================
+     HERO
+  ======================================================= */
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-image {
+    transform: none;
+
+    object-position: center center;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0,0,0,.12) 0%,
+        rgba(0,0,0,.15) 35%,
+        rgba(0,0,0,.78) 100%
+      );
+  }
+
   .hero-content {
-    padding: 0 20px 100px;
+    padding:
+      0
+      20px
+      calc(105px + env(safe-area-inset-bottom));
   }
 
   .hero h1 {
-    font-size: clamp(3.8rem, 19vw, 6rem);
+    max-width: 100%;
+
+    margin-top: 12px;
+
+    font-size: clamp(3.4rem, 17vw, 5.4rem);
+    line-height: .82;
+    letter-spacing: -.075em;
   }
 
   .hero-copy {
-    max-width: 280px;
+    max-width: 300px;
+
+    margin: 18px 0 22px;
+
+    font-size: .95rem;
+    line-height: 1.45;
   }
 
-  .hero-number {
-    top: 18%;
-    right: -4%;
+  .primary-button {
+    width: 100%;
+    min-width: 0;
 
-    font-size: 45vw;
+    padding: 17px 18px;
   }
 
   .hero-bottom {
     left: 20px;
-    right: auto;
+    right: 20px;
+    bottom: 24px;
+
+    justify-content: space-between;
+
+    gap: 0;
+
+    font-size: 8px;
   }
 
-  .products-section,
-  .categories {
-    padding-left: 20px;
-    padding-right: 20px;
+
+  /* =======================================================
+     PRODUCTS
+  ======================================================= */
+
+  .products-section {
+    padding: 75px 20px 90px;
   }
 
   .section-heading {
-    align-items: flex-start;
+    align-items: flex-end;
+
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2 {
+    margin-top: 12px;
+
+    font-size: clamp(3.4rem, 16vw, 5rem);
+  }
+
+  .product-heading-actions {
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 15px;
   }
 
   .section-heading .text-link {
-    margin-top: 10px;
+    margin-top: 0;
+
+    font-size: 9px;
   }
+
+  .product-arrows {
+    gap: 6px;
+  }
+
+  .product-arrow {
+    width: 42px;
+    height: 42px;
+
+    font-size: 18px;
+  }
+
+  /*
+    Slider:
+    Auf dem Handy wird exakt ein Produkt angezeigt.
+  */
 
   .product-grid {
-    grid-template-columns: 1fr;
+    --products-visible: 1;
+    --product-gap: 14px;
   }
 
-  .product-card:last-child {
+  .product-card {
     display: block;
   }
+
+  .product-image-wrap {
+    aspect-ratio: .82;
+  }
+
+  /*
+    Da Smartphones kein echtes Hover besitzen,
+    wird der schwarze Hover-Button ausgeblendet.
+  */
+
+  .product-hover {
+    display: none;
+  }
+
+  /*
+    Kein automatischer Bildwechsel durch
+    Touch-/Hover-Zustände.
+  */
+
+  .product-card:hover .product-image-back {
+    opacity: 0;
+  }
+
+  .product-card:hover .product-image-front {
+    opacity: 1;
+  }
+
+  .product-info {
+    padding-top: 14px;
+
+    gap: 15px;
+  }
+
+  .product-info h3 {
+    font-size: 11px;
+  }
+
+  .product-info strong {
+    font-size: 11px;
+  }
+
+
+  /* =======================================================
+     PLAYBOOK
+  ======================================================= */
 
   .playbook {
     padding: 0;
   }
 
   .playbook-field {
-    min-height: 600px;
-  }
-
-  .category-row {
-    grid-template-columns: 35px 1fr auto;
-
-    min-height: 100px;
-  }
-
-  .category-row h3 {
-    font-size: 2.6rem;
-  }
-
-  .story-image {
     min-height: 520px;
   }
 
-  .story-content {
-    padding: 80px 20px;
+  .playbook-field::before {
+    inset: 8% 0;
+
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 72px,
+        rgba(255,255,255,.18) 73px,
+        rgba(255,255,255,.18) 75px
+      );
   }
 
-  .statement {
-    padding: 100px 20px;
+  .playbook-copy {
+    width: 100%;
+
+    padding: 0 20px;
   }
+
+  .playbook-copy p {
+    font-size: 9px;
+  }
+
+  .playbook-copy h2 {
+    margin: 18px 0 30px;
+
+    font-size: clamp(3.1rem, 15vw, 4.8rem);
+    line-height: .84;
+  }
+
+  .light-button {
+    width: min(100%, 280px);
+    min-width: 0;
+
+    padding: 17px 18px;
+
+    text-align: left;
+  }
+
+  .light-button .button-arrow {
+    margin-left: auto;
+  }
+
+  .field-number {
+    font-size: 28vw;
+  }
+
+  .number-left {
+    left: -4%;
+  }
+
+  .number-right {
+    right: -4%;
+  }
+
+
+  /* =======================================================
+     CATEGORIES
+  ======================================================= */
+
+  .categories {
+    padding: 75px 20px 90px;
+  }
+
+  .categories > .section-index {
+    margin-bottom: 28px;
+  }
+
+  .category-row {
+    min-height: 90px;
+
+    grid-template-columns: 1fr auto;
+
+    gap: 15px;
+  }
+
+  .category-row:hover {
+    padding: 0;
+
+    background: transparent;
+  }
+
+  .category-row h3 {
+    font-size: clamp(2.4rem, 12vw, 3.5rem);
+    line-height: .9;
+  }
+
+  .category-arrow {
+    font-size: 24px;
+  }
+
+
+  /* =======================================================
+     STORY
+  ======================================================= */
+
+  .story {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .story-image {
+    min-height: 0;
+    height: 65svh;
+
+    max-height: 650px;
+  }
+
+  .story-image img {
+    object-position: center;
+  }
+
+  .story-content {
+    padding: 75px 20px 85px;
+  }
+
+  .story-content h2 {
+    font-size: clamp(3.6rem, 16vw, 5.2rem);
+    line-height: .82;
+  }
+
+  .story-text {
+    max-width: 100%;
+
+    margin-top: 24px;
+
+    font-size: .95rem;
+    line-height: 1.6;
+  }
+
+  .story .dark-link {
+    margin-top: 35px;
+  }
+
+
+  /* =======================================================
+     STATEMENT
+  ======================================================= */
+
+  .statement {
+    padding: 90px 20px;
+  }
+
+  .statement h2 {
+    margin: 22px 0;
+
+    font-size: clamp(4rem, 19vw, 6rem);
+    line-height: .78;
+  }
+
+  .statement-bottom {
+    font-size: clamp(1.1rem, 5.5vw, 1.6rem);
+  }
+
+
+  /* =======================================================
+     VALUES
+  ======================================================= */
 
   .values {
     grid-template-columns: 1fr;
@@ -1160,46 +1654,271 @@ img {
   }
 
   .values article {
-    min-height: 220px;
+    min-height: 0;
+
+    padding: 38px 5px 42px;
 
     border-right: 0;
     border-bottom: 1px solid var(--line);
+    border-top: 0;
   }
 
   .values article:first-child {
     border-left: 0;
   }
 
-  .values h3 {
-    margin-top: 50px;
+  .values article:nth-child(3),
+  .values article:nth-child(4) {
+    border-top: 0;
   }
 
+  .values article:last-child {
+    border-bottom: 0;
+  }
+
+  .value-icon {
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 25px;
+  }
+
+  .values h3 {
+    margin: 0 0 12px;
+
+    font-size: 1.4rem;
+  }
+
+  .values p {
+    max-width: 330px;
+
+    font-size: 12px;
+  }
+
+
+  /* =======================================================
+     NEWSLETTER
+  ======================================================= */
+
   .newsletter {
-    padding: 90px 20px;
+    padding: 85px 20px;
   }
 
   .newsletter h2 {
-    font-size: 17vw;
+    margin: 18px 0 22px;
+
+    font-size: clamp(3.6rem, 17vw, 5.2rem);
+    line-height: .82;
   }
 
+  .newsletter p {
+    max-width: 280px;
+
+    margin: 0 auto;
+
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .newsletter-form {
+    width: 100%;
+
+    margin-top: 38px;
+  }
+
+  .newsletter-form input {
+    min-width: 0;
+
+    padding: 17px 0;
+
+    font-size: 12px;
+  }
+
+  .newsletter-form button {
+    padding-left: 15px;
+
+    white-space: nowrap;
+  }
+
+
+  /* =======================================================
+     FOOTER
+  ======================================================= */
+
   .footer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding:
+      65px
+      20px
+      calc(25px + env(safe-area-inset-bottom));
   }
 
   .footer-top {
     display: block;
+
+    padding-bottom: 45px;
+  }
+
+  .footer-logo {
+    font-size: clamp(2.8rem, 12vw, 4.8rem);
+
+    overflow-wrap: anywhere;
   }
 
   .footer-top p {
-    margin-top: 35px;
+    margin-top: 30px;
   }
 
   .footer-grid {
+    padding: 45px 0;
+
     grid-template-columns: 1fr 1fr;
+
+    column-gap: 30px;
+    row-gap: 45px;
+  }
+
+  .footer-grid > div {
+    gap: 10px;
   }
 
   .footer-bottom {
-    gap: 20px;
+    flex-direction: column;
+
+    gap: 8px;
+
+    font-size: 8px;
+  }
+}
+
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   bis 380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+  /* ---------- HEADER ---------- */
+
+  .site-header {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    grid-template-columns: 36px 1fr auto;
+  }
+
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .cart-button {
+    font-size: 9px;
+  }
+
+  .cart-count {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero h1 {
+    font-size: 16vw;
+  }
+
+  .hero-copy {
+    font-size: .9rem;
+  }
+
+
+  /* ---------- PRODUCTS ---------- */
+
+  .products-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-heading {
+    gap: 15px;
+  }
+
+  .section-heading h2 {
+    font-size: 14vw;
+  }
+
+  .product-heading-actions {
+    gap: 10px;
+  }
+
+  .product-arrow {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  /* ---------- PLAYBOOK ---------- */
+
+  .playbook-copy {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .playbook-copy h2 {
+    font-size: 14vw;
+  }
+
+
+  /* ---------- CATEGORIES ---------- */
+
+  .categories {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .category-row h3 {
+    font-size: 11vw;
+  }
+
+
+  /* ---------- STORY ---------- */
+
+  .story-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  /* ---------- VALUES ---------- */
+
+  .values {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  /* ---------- NEWSLETTER ---------- */
+
+  .newsletter {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer-grid {
+    column-gap: 20px;
   }
 }
