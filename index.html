@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>READYSETHUT CLOTHING
+  </title>
+  <meta
+    name="description"
+    content="ReadySetHut — Streetwear inspired by Flag Football."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="site-header">
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      aria-label="Menü öffnen"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <a href="#" class="logo">
+      READY<span>SET</span>HUT
+    </a>
+
+    <div class="header-actions">
+      <a href="#shop">SHOP</a>
+
+      <button class="cart-button">
+        BAG
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MOBILE MENU
+  ====================================================== -->
+
+  <div class="menu-overlay" id="menuOverlay">
+
+    <button class="menu-close" id="menuClose">
+      CLOSE ×
+    </button>
+
+    <nav class="menu-nav">
+      <a href="#shop">SHOP</a>
+      <a href="#hoodies">HOODIES</a>
+      <a href="#story">OUR STORY</a>
+      <a href="#newsletter">NEWSLETTER</a>
+    </nav>
+
+    <div class="menu-bottom">
+      <span>FLAG FOOTBALL CULTURE</span>
+      <span>EST. 2026</span>
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <main>
+
+    <section class="hero">
+
+      <img
+        src="images/hero.png"
+        alt="ReadySetHut Flag Football Hoodie"
+        class="hero-image"
+      >
+
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>
+          BUILT FOR<br>
+          THE <span>HUDDLE.</span>
+        </h1>
+
+        <p class="hero-copy">
+          Clothing inspired by the routes,
+          calls and touchdowns.
+        </p>
+
+        <a href="#shop" class="primary-button">
+          SHOP THE DROP
+          <span>↗</span>
+        </a>
+
+      </div>
+
+      <div class="hero-bottom">
+
+        <span>READY</span>
+        <span>SET</span>
+        <span>HUT!</span>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+         NEW DROP
+    ====================================================== -->
+
+    <section class="products-section" id="shop">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-index">NEW ARRIVALS</p>
+
+          <h2>
+            DROP<br>
+            <span>001</span>
+          </h2>
+        </div>
+
+        <div class="product-heading-actions">
+
+          <a href="#" class="text-link">
+            VIEW ALL ↗
+          </a>
+
+          <div class="product-arrows">
+            <button
+              class="product-arrow product-arrow-prev"
+              type="button"
+              aria-label="Vorherige Produkte"
+            >
+              ←
+            </button>
+
+            <button
+              class="product-arrow product-arrow-next"
+              type="button"
+              aria-label="Nächste Produkte"
+            >
+              →
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="product-slider">
+
+        <div class="product-grid">
+
+          <!-- PRODUCT 1 -->
+          <article class="product-card">
+
+            <a href="#" class="product-image-wrap">
+
+              <span class="product-tag">NEW</span>
+
+              <img
+                src="images/hoodie-black.png"
+                alt="First Down Hoodie Back"
+                class="product-image product-image-back"
+              >
+
+              <img
+                src="images/hoodie-black-front.png"
+                alt="First Down Hoodie Front"
+                class="product-image product-image-front"
+              >
+
+              <div class="product-hover">
+                VIEW PRODUCT <span>↗</span>
+              </div>
+
+            </a>
+
+            <div class="product-info">
+              <div>
+                <h3>FIRST DOWN HOODIE</h3>
+                <p>Heavyweight / Black</p>
+              </div>
+
+              <strong>€69.00</strong>
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCT 2 -->
+          <article class="product-card">
+
+            <a href="#" class="product-image-wrap">
+
+              <span class="product-tag">NEW</span>
+
+              <img
+                src="images/hoodie-cream.png"
+                alt="Huddle Hoodie Back"
+                class="product-image product-image-back"
+              >
+
+              <img
+                src="images/hoodie-cream-front.png"
+                alt="Huddle Hoodie Front"
+                class="product-image product-image-front"
+              >
+
+              <div class="product-hover">
+                VIEW PRODUCT <span>↗</span>
+              </div>
+
+            </a>
+
+            <div class="product-info">
+              <div>
+                <h3>HUDDLE HOODIE</h3>
+                <p>Heavyweight / Creme</p>
+              </div>
+
+              <strong>€69.00</strong>
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCT 3 -->
+          <article class="product-card">
+
+            <a href="#" class="product-image-wrap">
+
+              <span class="product-tag">NEW</span>
+
+              <img
+                src="images/hoodie-orange.png"
+                alt="Game Day Hoodie Back"
+                class="product-image product-image-back"
+              >
+
+              <img
+                src="images/hoodie-orange-front.png"
+                alt="Game Day Hoodie Front"
+                class="product-image product-image-front"
+              >
+
+              <div class="product-hover">
+                VIEW PRODUCT <span>↗</span>
+              </div>
+
+            </a>
+
+            <div class="product-info">
+              <div>
+                <h3>GAME DAY HOODIE</h3>
+                <p>Heavyweight / Orange</p>
+              </div>
+
+              <strong>€69.00</strong>
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCT 4 -->
+          <article class="product-card">
+
+            <a href="#" class="product-image-wrap">
+
+              <span class="product-tag">NEW</span>
+
+              <img
+                src="images/tee-lavender.png"
+                alt="Route Runner Hoodie Back"
+                class="product-image product-image-back"
+              >
+
+              <img
+                src="images/tee-lavender-front.png"
+                alt="Route Runner Hoodie Front"
+                class="product-image product-image-front"
+              >
+
+              <div class="product-hover">
+                VIEW PRODUCT <span>↗</span>
+              </div>
+
+            </a>
+
+            <div class="product-info">
+              <div>
+                <h3>ROUTE RUNNER TEE</h3>
+                <p>Heavyweight / Lavender</p>
+              </div>
+
+              <strong>€39.00</strong>
+            </div>
+
+          </article>
+
+
+          <!-- PRODUCT 5 -->
+          <article class="product-card">
+
+            <a href="#" class="product-image-wrap">
+
+              <span class="product-tag">NEW</span>
+
+              <img
+                src="images/tee-white.png"
+                alt="Sideline Hoodie Back"
+                class="product-image product-image-back"
+              >
+
+              <img
+                src="images/tee-white-front.png"
+                alt="Sideline Hoodie Front"
+                class="product-image product-image-front"
+              >
+
+              <div class="product-hover">
+                VIEW PRODUCT <span>↗</span>
+              </div>
+
+            </a>
+
+            <div class="product-info">
+              <div>
+                <h3>SIDELINE TEE</h3>
+                <p>Heavyweight / White</p>
+              </div>
+
+              <strong>€39.00</strong>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PLAYBOOK BANNER
+    ====================================================== -->
+
+    <section class="playbook">
+
+      <div class="playbook-field">
+
+        <span class="field-number number-left">
+          10
+        </span>
+
+        <span class="field-number number-right">
+          20
+        </span>
+
+        <div class="route route-one"></div>
+        <div class="route route-two"></div>
+
+        <div class="playbook-copy">
+
+          <p>THE PLAY CALL</p>
+
+          <h2>
+            LOOK GOOD.<br>
+            RUN ROUTES.
+          </h2>
+
+          <a href="#hoodies" class="light-button">
+            <span>EXPLORE HOODIES</span>
+            <span class="button-arrow">↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CATEGORIES
+    ====================================================== -->
+
+    <section class="categories" id="hoodies">
+
+      <p class="section-index">
+        SHOP BY CATEGORY
+      </p>
+
+      <a href="#shop" class="category-row">
+        <h3>HOODIES</h3>
+        <span class="category-arrow">↗</span>
+
+      </a>
+
+      <a href="#shop" class="category-row">
+        <h3>TEES</h3>
+        <span class="category-arrow">↗</span>
+
+      </a>
+
+      <a href="#shop" class="category-row">
+        <h3>GAME DAY</h3>
+        <span class="category-arrow">↗</span>
+
+      </a>
+
+      <a href="#shop" class="category-row">
+        <h3>ACCESSORIES</h3>
+        <span class="category-arrow">↗</span>
+
+      </a>
+
+    </section>
+
+
+    <!-- =====================================================
+         STORY
+    ====================================================== -->
+
+    <section class="story" id="story">
+
+      <div class="story-image">
+        <img
+          src="images/story.png"
+          alt="Flag Football Game"
+        >
+      </div>
+
+
+      <div class="story-content">
+
+        <h2>
+          MORE THAN<br>
+          <span>A GAME.</span>
+        </h2>
+
+        <p class="story-text">
+          Born between the sidelines.
+          Inspired by late practices, deep routes,
+          game-winning catches and the people
+          standing in the huddle beside you.
+        </p>
+
+        <p class="story-text">
+          ReadySetHut brings Flag Football
+          off the field and into everyday life.
+        </p>
+
+        <a href="#" class="dark-link">
+          READ OUR STORY ↗
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         STATEMENT
+    ====================================================== -->
+
+    <section class="statement">
+
+      <p class="statement-bottom">
+        FLAG FOOTBALL ISN'T
+      </p>
+
+      <h2>
+        JUST WHAT<br>
+        WE <span>PLAY.</span>
+      </h2>
+
+      <p class="statement-bottom">
+        IT'S WHO WE ARE.
+      </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         VALUES
+    ====================================================== -->
+
+    <section class="values">
+
+      <article>
+        <div class="value-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M22 12
+                    L14 16
+                    L6 27
+                    L15 33
+                    L21 26
+                    L21 53
+                    L43 53
+                    L43 26
+                    L49 33
+                    L58 27
+                    L50 16
+                    L42 12
+                    C40 18 36 21 32 21
+                    C28 21 24 18 22 12Z"/>
+          </svg>
+        </div>
+        <h3>HEAVYWEIGHT</h3>
+        <p>
+          Premium fabrics made for everyday wear.
+          On the sideline and off it.
+        </p>
+      </article>
+
+      <article>
+        <div class="value-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+
+            <!-- Football Außenform -->
+            <path d="
+              M8 39
+              C13 24 25 13 40 9
+              C47 7 53 8 56 11
+              C59 14 59 20 57 27
+              C53 41 41 52 26 56
+              C19 58 13 57 10 54
+              C7 51 6 46 8 39Z
+            "/>
+
+            <!-- Naht -->
+            <path d="M22 43L43 22"/>
+
+            <!-- Schnürung -->
+            <path d="M25 36L30 41"/>
+            <path d="M29 32L34 37"/>
+            <path d="M33 28L38 33"/>
+            <path d="M37 24L42 29"/>
+
+            <!-- typische Football-Nähte -->
+            <path d="M15 45C20 47 24 51 26 56"/>
+            <path d="M40 9C42 15 47 19 53 21"/>
+
+          </svg>
+        </div>
+        <h3>FLAG DNA</h3>
+        <p>
+          Every design takes inspiration from
+          routes, formations and football culture.
+        </p>
+      </article>
+
+      <article>
+        <div class="value-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+
+            <path d="M10 20L32 10L54 20L32 31Z"/>
+
+            <path d="M10 20V45L32 55L54 45V20"/>
+
+            <path d="M32 31V55"/>
+
+            <path d="M21 15L43 25"/>
+
+          </svg>
+        </div>
+        <h3>SMALL DROPS</h3>
+        <p>
+          Limited collections instead of
+          endless mass production.
+        </p>
+      </article>
+
+      <article>
+        <div class="value-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+
+            <!-- Gürtel -->
+            <path d="M8 18H27"/>
+            <path d="M37 18H56"/>
+
+            <!-- Schnalle -->
+            <rect x="27" y="14" width="10" height="8" rx="1"/>
+
+            <!-- linke Flag -->
+            <path d="
+              M15 18
+              L17 47
+              C17.5 51 20 54 23 53
+              C26 52 27 49 26 46
+              L22 18
+            "/>
+
+            <!-- rechte Flag -->
+            <path d="
+              M42 18
+              L38 46
+              C37 50 39 53 42 54
+              C45 55 47 52 48 48
+              L50 18
+            "/>
+
+            <!-- kleine Stofffalten -->
+            <path d="M18 28L23 30"/>
+            <path d="M17 36L24 38"/>
+
+            <path d="M41 29L48 27"/>
+            <path d="M40 37L47 35"/>
+
+          </svg>
+        </div>
+        <h3>GAME READY</h3>
+        <p>
+          Built for players, fans and everyone
+          living the sport.
+        </p>
+      </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         NEWSLETTER
+    ====================================================== -->
+
+    <section class="newsletter" id="newsletter">
+
+      <h2>
+        DON'T MISS<br>
+        THE <span>NEXT DROP.</span>
+      </h2>
+
+      <p>
+        New releases. Early access.
+        No unnecessary timeouts.
+      </p>
+
+      <form class="newsletter-form">
+
+        <input
+          type="email"
+          placeholder="YOUR EMAIL"
+          required
+        >
+
+        <button type="submit">
+          JOIN ↗
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+
+      <div class="footer-logo">
+        READY<span>SET</span>HUT
+      </div>
+
+      <p>
+        FLAG FOOTBALL<br>
+        CLOTHING & CULTURE.
+      </p>
+
+    </div>
+
+
+    <div class="footer-grid">
+
+      <div>
+        <span class="footer-title">SHOP</span>
+        <a href="#">Hoodies</a>
+        <a href="#">Tees</a>
+        <a href="#">Accessories</a>
+        <a href="#">All Products</a>
+      </div>
+
+      <div>
+        <span class="footer-title">READYSETHUT</span>
+        <a href="#">Our Story</a>
+        <a href="#">Contact</a>
+        <a href="#">Instagram</a>
+      </div>
+
+      <div>
+        <span class="footer-title">SUPPORT</span>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">Size Guide</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div>
+        <span class="footer-title">LEGAL</span>
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+        <a href="#">AGB</a>
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>© 2026 READYSETHUT</span>
+
+      <span>
+        MADE FOR THE HUDDLE.
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
